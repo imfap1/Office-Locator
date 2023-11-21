@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e97ffae728f747b7cfb5c28058db1ffd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e97ffae728f747b7cfb5c28058db1ffd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e97ffae728f747b7cfb5c28058db1ffd = L.map(
+                "map_e97ffae728f747b7cfb5c28058db1ffd",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+
+            
+
+        
+    
+            var tile_layer_9c4c47ba2dd6b92b2e179e3961b846bf = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var marker_cff4368ba818b647a065b3968f0e383b = L.marker(
+                [37.795536, -122.393425],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_c2457b65706a51ab893582d95e757ccd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_cff4368ba818b647a065b3968f0e383b.setIcon(icon_c2457b65706a51ab893582d95e757ccd);
+        
+    
+            marker_cff4368ba818b647a065b3968f0e383b.bindTooltip(
+                `<div>
+                     Ferry Building Marketplace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c322932155abdbb72b5a7ce4d6d1d3b0 = L.marker(
+                [37.795634, -122.393409],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_9c34fcd05e00186fd54c9cda3fbb26ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_c322932155abdbb72b5a7ce4d6d1d3b0.setIcon(icon_9c34fcd05e00186fd54c9cda3fbb26ea);
+        
+    
+            marker_c322932155abdbb72b5a7ce4d6d1d3b0.bindTooltip(
+                `<div>
+                     San Francisco Ferry Building
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3a42bc315b6ccea2a0c70d4ae85754c = L.marker(
+                [37.795352, -122.393679],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_dadf7232d87bebb6a122ad4b25ba0cd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_e3a42bc315b6ccea2a0c70d4ae85754c.setIcon(icon_dadf7232d87bebb6a122ad4b25ba0cd0);
+        
+    
+            marker_e3a42bc315b6ccea2a0c70d4ae85754c.bindTooltip(
+                `<div>
+                     San Francisco Bay Ferry Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adebd2e28d7eb81655f9c9ca179872e9 = L.marker(
+                [37.809062, -122.412198],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_a361ebc8f1cec1c17982ae44c6646eda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_adebd2e28d7eb81655f9c9ca179872e9.setIcon(icon_a361ebc8f1cec1c17982ae44c6646eda);
+        
+    
+            marker_adebd2e28d7eb81655f9c9ca179872e9.bindTooltip(
+                `<div>
+                     San Francisco Bay Ferry Pier 41 Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e45e6b3ddbce98c328c467c6bb4c409b = L.marker(
+                [37.809073, -122.412055],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_deb71d7900309dc482a069ef3f5a5ea3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_e45e6b3ddbce98c328c467c6bb4c409b.setIcon(icon_deb71d7900309dc482a069ef3f5a5ea3);
+        
+    
+            marker_e45e6b3ddbce98c328c467c6bb4c409b.bindTooltip(
+                `<div>
+                     San Francisco Bay Ferry
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fd04336ca47e6c71189282788400912 = L.marker(
+                [37.795309, -122.39339],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_f187fbb5819834a97753d3ae8b0501cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_3fd04336ca47e6c71189282788400912.setIcon(icon_f187fbb5819834a97753d3ae8b0501cc);
+        
+    
+            marker_3fd04336ca47e6c71189282788400912.bindTooltip(
+                `<div>
+                     Ferry Plaza Wine Merchant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8fc860107595c9d7fead9209f95e03e = L.marker(
+                [37.795678, -122.278937],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_2fd912b4e779970f0b922fec0fff96ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_e8fc860107595c9d7fead9209f95e03e.setIcon(icon_2fd912b4e779970f0b922fec0fff96ee);
+        
+    
+            marker_e8fc860107595c9d7fead9209f95e03e.bindTooltip(
+                `<div>
+                     Oakland Ferry Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebf803e31e98b90728f4e0df49014bce = L.marker(
+                [37.790688, -122.294002],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_cd1eeec3bc91d0e339eb13cd5a96f674 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_ebf803e31e98b90728f4e0df49014bce.setIcon(icon_cd1eeec3bc91d0e339eb13cd5a96f674);
+        
+    
+            marker_ebf803e31e98b90728f4e0df49014bce.bindTooltip(
+                `<div>
+                     San Francisco Bay Ferry - Alameda Main Street Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54db8dba75bab6027d275f4f4ba2595d = L.marker(
+                [37.736493, -122.25709],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_0526e78007c52273ff612cbf018d8cb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_54db8dba75bab6027d275f4f4ba2595d.setIcon(icon_0526e78007c52273ff612cbf018d8cb5);
+        
+    
+            marker_54db8dba75bab6027d275f4f4ba2595d.bindTooltip(
+                `<div>
+                     San Francisco Bay Ferry - Alameda Harbor Bay Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1ffa3715d2a4726a8909d40f4b3af36 = L.marker(
+                [37.661611, -122.37601],
+                {}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+            var icon_0978e31e8a2424c53cb7719821edc99a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "beige", "prefix": "fa"}
+            );
+            marker_a1ffa3715d2a4726a8909d40f4b3af36.setIcon(icon_0978e31e8a2424c53cb7719821edc99a);
+        
+    
+            marker_a1ffa3715d2a4726a8909d40f4b3af36.bindTooltip(
+                `<div>
+                     Oyster Point Ferry Terminal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dfac4fa25d566e018060d2b76f6f7edf = L.circle(
+                [37.7804301, -122.4103305],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3500, "stroke": true, "weight": 2}
+            ).addTo(map_e97ffae728f747b7cfb5c28058db1ffd);
+        
+    
+        var popup_0c0957cfb39a25f9bad605656a193e19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7168ee8956e612445e42517967b35090 = $(`<div id="html_7168ee8956e612445e42517967b35090" style="width: 100.0%; height: 100.0%;">Desired Area</div>`)[0];
+                popup_0c0957cfb39a25f9bad605656a193e19.setContent(html_7168ee8956e612445e42517967b35090);
+            
+        
+
+        circle_dfac4fa25d566e018060d2b76f6f7edf.bindPopup(popup_0c0957cfb39a25f9bad605656a193e19)
+        ;
+
+        
+    
+</script>
+</html>

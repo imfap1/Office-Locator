@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a14646a33bbba3e607aff95213a3fde9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a14646a33bbba3e607aff95213a3fde9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a14646a33bbba3e607aff95213a3fde9 = L.map(
+                "map_a14646a33bbba3e607aff95213a3fde9",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_a14646a33bbba3e607aff95213a3fde9);
+
+            
+
+        
+    
+            var tile_layer_f71f4cc0631487bc837a1da731ae8e30 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var marker_bf9b9202bbab17c28364c5986e748c64 = L.marker(
+                [37.767924, -122.387478],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_179e647de645c446cb216bc096f19b2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_bf9b9202bbab17c28364c5986e748c64.setIcon(icon_179e647de645c446cb216bc096f19b2d);
+        
+    
+            marker_bf9b9202bbab17c28364c5986e748c64.bindTooltip(
+                `<div>
+                     Chase Center Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88513d459f0bd29059ad037b4497d419 = L.marker(
+                [37.75029, -122.20282],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_2c5214f3cda0daeb409520290ca5efc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_88513d459f0bd29059ad037b4497d419.setIcon(icon_2c5214f3cda0daeb409520290ca5efc2);
+        
+    
+            marker_88513d459f0bd29059ad037b4497d419.bindTooltip(
+                `<div>
+                     Oracle Arena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be365132b71a53b0cca0e287262a14eb = L.marker(
+                [37.767456, -122.453888],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_6ac8b0a357eee32f7f1a81ccfadb12a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_be365132b71a53b0cca0e287262a14eb.setIcon(icon_6ac8b0a357eee32f7f1a81ccfadb12a2);
+        
+    
+            marker_be365132b71a53b0cca0e287262a14eb.bindTooltip(
+                `<div>
+                     Kezar Pavilion
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a836aeeadf0eadeddeaeaf1f0e347006 = L.marker(
+                [37.768163, -122.387778],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_455ff7e7064d5e057e5810aefde6e949 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_a836aeeadf0eadeddeaeaf1f0e347006.setIcon(icon_455ff7e7064d5e057e5810aefde6e949);
+        
+    
+            marker_a836aeeadf0eadeddeaeaf1f0e347006.bindTooltip(
+                `<div>
+                     Google Cloud Courtside Lounge 25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_351553cb978dd55996353f030ded8bed = L.marker(
+                [37.767832, -122.387401],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_7ff0b7b7ddfa231465e4e173f2902eca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_351553cb978dd55996353f030ded8bed.setIcon(icon_7ff0b7b7ddfa231465e4e173f2902eca);
+        
+    
+            marker_351553cb978dd55996353f030ded8bed.bindTooltip(
+                `<div>
+                     United Club
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1c9ca5f8334bf8a8f716dd30957a64d = L.marker(
+                [37.747456, -122.496039],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_ac79ce5a66ca7a92705dfad0e31ca38a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_b1c9ca5f8334bf8a8f716dd30957a64d.setIcon(icon_ac79ce5a66ca7a92705dfad0e31ca38a);
+        
+    
+            marker_b1c9ca5f8334bf8a8f716dd30957a64d.bindTooltip(
+                `<div>
+                     Cowell Pavilion
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4d25214b510bdae13a02ea7723771de = L.marker(
+                [37.781084, -122.414131],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_7d1389333fb60732227669e831ce186c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_f4d25214b510bdae13a02ea7723771de.setIcon(icon_7d1389333fb60732227669e831ce186c);
+        
+    
+            marker_f4d25214b510bdae13a02ea7723771de.bindTooltip(
+                `<div>
+                     Basketball Court
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fefe02103a498da7bd5912f7b3acd37d = L.marker(
+                [37.778096, -122.445491],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_f5bc2d2e5f6993a7849d639c7f6c3d25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_fefe02103a498da7bd5912f7b3acd37d.setIcon(icon_f5bc2d2e5f6993a7849d639c7f6c3d25);
+        
+    
+            marker_fefe02103a498da7bd5912f7b3acd37d.bindTooltip(
+                `<div>
+                     USF - War Memorial Gymnasium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5efd7e84b7363f6969d78ae07ad3a08 = L.marker(
+                [37.767521, -122.453892],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_b1b89146065c9988127628ebd7967d22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_c5efd7e84b7363f6969d78ae07ad3a08.setIcon(icon_b1b89146065c9988127628ebd7967d22);
+        
+    
+            marker_c5efd7e84b7363f6969d78ae07ad3a08.bindTooltip(
+                `<div>
+                     Urban Knights
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_855904c1fc3f845b9ccea49094388b6d = L.marker(
+                [37.721413, -122.478227],
+                {}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+            var icon_77d56c336c611df114f2f7c6609f00ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-pin", "iconColor": "black", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_855904c1fc3f845b9ccea49094388b6d.setIcon(icon_77d56c336c611df114f2f7c6609f00ca);
+        
+    
+            marker_855904c1fc3f845b9ccea49094388b6d.bindTooltip(
+                `<div>
+                     Gym Building-SFSU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e0a72a7fc55085b46c87092e5f5e3820 = L.circle(
+                [37.7804301, -122.4103305],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3500, "stroke": true, "weight": 2}
+            ).addTo(map_a14646a33bbba3e607aff95213a3fde9);
+        
+    
+        var popup_20f04967aff877c484f3e18c1d056615 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6949731e00d640a2470971b0259e1374 = $(`<div id="html_6949731e00d640a2470971b0259e1374" style="width: 100.0%; height: 100.0%;">Desired Area</div>`)[0];
+                popup_20f04967aff877c484f3e18c1d056615.setContent(html_6949731e00d640a2470971b0259e1374);
+            
+        
+
+        circle_e0a72a7fc55085b46c87092e5f5e3820.bindPopup(popup_20f04967aff877c484f3e18c1d056615)
+        ;
+
+        
+    
+</script>
+</html>

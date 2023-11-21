@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe5310eeea0d7f4811d6b66288d72988 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe5310eeea0d7f4811d6b66288d72988" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe5310eeea0d7f4811d6b66288d72988 = L.map(
+                "map_fe5310eeea0d7f4811d6b66288d72988",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+
+            
+
+        
+    
+            var tile_layer_9454d763731506cd08c3ae133eb191bb = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var marker_7ca4b792d0157f932bcdf6eb2b404cbe = L.marker(
+                [37.61649, -122.38681],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_73202703a039af6e1e8a495dfaf62f0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7ca4b792d0157f932bcdf6eb2b404cbe.setIcon(icon_73202703a039af6e1e8a495dfaf62f0f);
+        
+    
+            marker_7ca4b792d0157f932bcdf6eb2b404cbe.bindTooltip(
+                `<div>
+                     San Francisco International Airport (SFO)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_598aef2879c5f42b521f62304140e2c0 = L.marker(
+                [37.61751, -122.387817],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_df3c481e2bab25a635b89052a95b8777 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_598aef2879c5f42b521f62304140e2c0.setIcon(icon_df3c481e2bab25a635b89052a95b8777);
+        
+    
+            marker_598aef2879c5f42b521f62304140e2c0.bindTooltip(
+                `<div>
+                     The Centurion Lounge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65e1a9e9128816e4841833a0edd6b330 = L.marker(
+                [37.617054, -122.389508],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_1b9a89cce7bab19b4ae49036ef0b097e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_65e1a9e9128816e4841833a0edd6b330.setIcon(icon_1b9a89cce7bab19b4ae49036ef0b097e);
+        
+    
+            marker_65e1a9e9128816e4841833a0edd6b330.bindTooltip(
+                `<div>
+                     United Polaris Lounge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c99a35d2f4f3590867bed391648c961 = L.marker(
+                [37.613092, -122.389133],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_a438adcf4debd7995ad28778f5598abc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8c99a35d2f4f3590867bed391648c961.setIcon(icon_a438adcf4debd7995ad28778f5598abc);
+        
+    
+            marker_8c99a35d2f4f3590867bed391648c961.bindTooltip(
+                `<div>
+                     Emirates Lounge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e49bdc792c382d244ad692d2836a671 = L.marker(
+                [37.615272, -122.383678],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_2747ce570105f9baae707a9f0dc907ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4e49bdc792c382d244ad692d2836a671.setIcon(icon_2747ce570105f9baae707a9f0dc907ca);
+        
+    
+            marker_4e49bdc792c382d244ad692d2836a671.bindTooltip(
+                `<div>
+                     Delta Sky Club
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73ed97b9d1686de7a7b2355b76e48be2 = L.marker(
+                [37.662811, -122.121239],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_e2e1d148d27a8bd188313eb8a25ee1d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_73ed97b9d1686de7a7b2355b76e48be2.setIcon(icon_e2e1d148d27a8bd188313eb8a25ee1d9);
+        
+    
+            marker_73ed97b9d1686de7a7b2355b76e48be2.bindTooltip(
+                `<div>
+                     Hayward Executive Airport (HWD)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_685c9580aaa73c5769e945de2b1b33e9 = L.marker(
+                [37.617405, -122.382729],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_596b4bb6b7f0094e4a44cff754bf4a7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_685c9580aaa73c5769e945de2b1b33e9.setIcon(icon_596b4bb6b7f0094e4a44cff754bf4a7f);
+        
+    
+            marker_685c9580aaa73c5769e945de2b1b33e9.bindTooltip(
+                `<div>
+                     Alaska Lounge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_610570fa053428e3e0a4e7af79fb0ed6 = L.marker(
+                [37.616875, -122.389713],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_3fa4f8faf4603cf23d0857cd802e85c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_610570fa053428e3e0a4e7af79fb0ed6.setIcon(icon_3fa4f8faf4603cf23d0857cd802e85c5);
+        
+    
+            marker_610570fa053428e3e0a4e7af79fb0ed6.bindTooltip(
+                `<div>
+                     The Dining Room
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bb0d5e44166b437b1e0e4f17f06532c = L.marker(
+                [37.614275, -122.3882],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_edc973906e871458ffb0109321047070 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1bb0d5e44166b437b1e0e4f17f06532c.setIcon(icon_edc973906e871458ffb0109321047070);
+        
+    
+            marker_1bb0d5e44166b437b1e0e4f17f06532c.bindTooltip(
+                `<div>
+                     Virgin Atlantic Upper Class Clubhouse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f1db1165f580b5044626521316b8e01 = L.marker(
+                [37.513993, -122.494989],
+                {}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+            var icon_9ea9fa8d4413eb42bb0a8e9d28ec09c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0f1db1165f580b5044626521316b8e01.setIcon(icon_9ea9fa8d4413eb42bb0a8e9d28ec09c3);
+        
+    
+            marker_0f1db1165f580b5044626521316b8e01.bindTooltip(
+                `<div>
+                     Half Moon Bay Airport (HAF)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_950e1d9f2a1b1b60465edfdd6f0548bd = L.circle(
+                [37.7804301, -122.4103305],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3500, "stroke": true, "weight": 2}
+            ).addTo(map_fe5310eeea0d7f4811d6b66288d72988);
+        
+    
+        var popup_0112cb4e88858692e730da015ca77736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60ce193bccb36431e43203a2a93f7f6e = $(`<div id="html_60ce193bccb36431e43203a2a93f7f6e" style="width: 100.0%; height: 100.0%;">Desired Area</div>`)[0];
+                popup_0112cb4e88858692e730da015ca77736.setContent(html_60ce193bccb36431e43203a2a93f7f6e);
+            
+        
+
+        circle_950e1d9f2a1b1b60465edfdd6f0548bd.bindPopup(popup_0112cb4e88858692e730da015ca77736)
+        ;
+
+        
+    
+</script>
+</html>

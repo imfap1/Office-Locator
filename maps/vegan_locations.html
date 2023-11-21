@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_227ea1ca46e3d7b558a26680a50a393c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_227ea1ca46e3d7b558a26680a50a393c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_227ea1ca46e3d7b558a26680a50a393c = L.map(
+                "map_227ea1ca46e3d7b558a26680a50a393c",
+                {
+                    center: [37.7749, -122.4194],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+
+            
+
+        
+    
+            var tile_layer_e96cae6c399432a7f3854e7410cf8464 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var marker_1b492c0d9c2e994aaa2be460785dc3b6 = L.marker(
+                [37.768028, -122.421674],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_605f4b20e0639eed2a3ba79eeeea97c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_1b492c0d9c2e994aaa2be460785dc3b6.setIcon(icon_605f4b20e0639eed2a3ba79eeeea97c8);
+        
+    
+            marker_1b492c0d9c2e994aaa2be460785dc3b6.bindTooltip(
+                `<div>
+                     Shizen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6480322c212ad651b8b11c425d8cda7d = L.marker(
+                [37.761556, -122.419141],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_59d96a947a97e36c900ed440f242906c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_6480322c212ad651b8b11c425d8cda7d.setIcon(icon_59d96a947a97e36c900ed440f242906c);
+        
+    
+            marker_6480322c212ad651b8b11c425d8cda7d.bindTooltip(
+                `<div>
+                     Gracias Madre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5ab6b980dd1e017cf2a1fd148516419 = L.marker(
+                [37.760656, -122.504063],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_5e5e831aced7d8ad675eb04323ce1601 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_a5ab6b980dd1e017cf2a1fd148516419.setIcon(icon_5e5e831aced7d8ad675eb04323ce1601);
+        
+    
+            marker_a5ab6b980dd1e017cf2a1fd148516419.bindTooltip(
+                `<div>
+                     Judahlicious
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_623fc4b8de8dd24b593be5f7c75b7fda = L.marker(
+                [37.773837, -122.426031],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_a7ad8e89461e7002be9628904386c81b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_623fc4b8de8dd24b593be5f7c75b7fda.setIcon(icon_a7ad8e89461e7002be9628904386c81b);
+        
+    
+            marker_623fc4b8de8dd24b593be5f7c75b7fda.bindTooltip(
+                `<div>
+                     Greens Restaurant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7b3ec0421914f9bd2994f0906e40fb5 = L.marker(
+                [37.847471, -122.251851],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_75ef7f2e9ed5d25f0fb8898085a0f4b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_b7b3ec0421914f9bd2994f0906e40fb5.setIcon(icon_75ef7f2e9ed5d25f0fb8898085a0f4b8);
+        
+    
+            marker_b7b3ec0421914f9bd2994f0906e40fb5.bindTooltip(
+                `<div>
+                     Millennium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df0c3a7ba538ee2d12613f411b116b46 = L.marker(
+                [37.797611, -122.432527],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_fbdef3875ecfacb853f20db6585cef4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_df0c3a7ba538ee2d12613f411b116b46.setIcon(icon_fbdef3875ecfacb853f20db6585cef4b);
+        
+    
+            marker_df0c3a7ba538ee2d12613f411b116b46.bindTooltip(
+                `<div>
+                     Wildseed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b96cba9a95252f86d1e852eed4443366 = L.marker(
+                [37.871883, -122.272071],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_bf996246e2c9fac52da1bd0c077d5aec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_b96cba9a95252f86d1e852eed4443366.setIcon(icon_bf996246e2c9fac52da1bd0c077d5aec);
+        
+    
+            marker_b96cba9a95252f86d1e852eed4443366.bindTooltip(
+                `<div>
+                     The Butcher's Son
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_308042922894b2f8f32b06be1329e488 = L.marker(
+                [37.795798, -122.405392],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_7f16fd2c10d2925d4b6b58b1ced17157 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_308042922894b2f8f32b06be1329e488.setIcon(icon_7f16fd2c10d2925d4b6b58b1ced17157);
+        
+    
+            marker_308042922894b2f8f32b06be1329e488.bindTooltip(
+                `<div>
+                     Enjoy Vegetarian Restaurant
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d5ce257c2d97de4abb1e8deb81feafb = L.marker(
+                [37.797037, -122.276074],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_ccaa865501761dd40b1acf80be4e5b6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_1d5ce257c2d97de4abb1e8deb81feafb.setIcon(icon_ccaa865501761dd40b1acf80be4e5b6e);
+        
+    
+            marker_1d5ce257c2d97de4abb1e8deb81feafb.bindTooltip(
+                `<div>
+                     Souley Vegan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7e26c8fdadefe3e5bb2d6b6a9eb9932 = L.marker(
+                [37.756655, -122.420858],
+                {}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+            var icon_34aa75625d46efec601d3ece1ce051e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "green", "markerColor": "white", "prefix": "fa"}
+            );
+            marker_e7e26c8fdadefe3e5bb2d6b6a9eb9932.setIcon(icon_34aa75625d46efec601d3ece1ce051e2);
+        
+    
+            marker_e7e26c8fdadefe3e5bb2d6b6a9eb9932.bindTooltip(
+                `<div>
+                     Udupi Palace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a67b3aec556584b7eddd9c0dc268b340 = L.circle(
+                [37.7804301, -122.4103305],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3500, "stroke": true, "weight": 2}
+            ).addTo(map_227ea1ca46e3d7b558a26680a50a393c);
+        
+    
+        var popup_4611d974e1c3f06326f3be4e9fd46152 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec894b40e46b0eb71228bfb14837d0d6 = $(`<div id="html_ec894b40e46b0eb71228bfb14837d0d6" style="width: 100.0%; height: 100.0%;">Desired Area</div>`)[0];
+                popup_4611d974e1c3f06326f3be4e9fd46152.setContent(html_ec894b40e46b0eb71228bfb14837d0d6);
+            
+        
+
+        circle_a67b3aec556584b7eddd9c0dc268b340.bindPopup(popup_4611d974e1c3f06326f3be4e9fd46152)
+        ;
+
+        
+    
+</script>
+</html>
