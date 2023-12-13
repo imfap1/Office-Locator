@@ -55,4 +55,4 @@ Provides venue data for enhanced urban landscape analysis.
 ## Conclusion
 The Office Locator successfully combines database querying, API usage, and analytical decision-making. It's a data-driven approach tailored to the specific needs of locating a prime office space, exemplified by the choice of Exent's office in San Francisco.
 
-![Office Best Location Map](office_best_location_map.png)  # Add your map image file here
+![Office Best Location Map](https://github.com/imfap1/Office-Locator/blob/main/maps/office_best_location.png?raw=true)
